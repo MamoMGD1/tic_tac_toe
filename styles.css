@@ -1,0 +1,66 @@
+*{
+    background-color: black;
+    box-sizing: border-box;
+    color: white;
+    font-family: Calibri;
+    text-align: center;
+    align-content: center;
+    font-size: 1.4em;
+}
+body,main{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+table{
+    border: none;
+    border-radius: 5px;
+}
+table th{
+    color: gold;
+    padding: 0px 5px;
+}
+table td{
+    color: white;
+    padding: 0px 5px;
+}
+.clear{
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    border: solid 2px;
+    border-radius: 5px;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.clear:hover{
+    color: gold;
+    transform: scale(1.1);
+}
+.message{
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+.play-board{
+    background-color: gold;
+    padding: 2px;
+    width: 304px;
+    height: 304px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+    padding: 0px;
+}
+.tile{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+}
